@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
             }
         }
 
-        // Always return the same response, whether or not the email has an
+        
         // account, so nobody can use this form to discover who is registered.
         return NextResponse.json({
             success: true,
