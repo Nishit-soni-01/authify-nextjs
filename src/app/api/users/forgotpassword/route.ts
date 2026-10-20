@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
         }
 
         
-        // account, so nobody can use this form to discover who is registered.
+        
         return NextResponse.json({
             success: true,
             message:
