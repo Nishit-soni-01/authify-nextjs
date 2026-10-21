@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
         const email = String(reqBody.email ?? "").trim().toLowerCase();
         const password = String(reqBody.password ?? "");
 
-        // 1. Validate input
+       
         if (!email || !password) {
             return NextResponse.json(
                 { error: "Email and password are required" },
