@@ -87,7 +87,7 @@ export default function ResetPasswordPage() {
     const [loading, setLoading] = useState(false);
     const [formError, setFormError] = useState("");
 
-    // Read the token from the link: /resetpassword?token=abc123
+    
     useEffect(() => {
         const urlToken = new URLSearchParams(window.location.search).get("token");
         setToken(urlToken || "");
