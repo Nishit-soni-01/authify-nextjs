@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
         }
 
         
-        // Both failures return the SAME message, so attackers can't use the
+        
         // response to find out which emails have accounts.
         const user = await User.findOne({ email });
         const validPassword = user
