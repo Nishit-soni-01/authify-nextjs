@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
 
         
         
-        // response to find out which emails have accounts.
+        
         const user = await User.findOne({ email });
         const validPassword = user
             ? await bcryptjs.compare(password, user.password)
