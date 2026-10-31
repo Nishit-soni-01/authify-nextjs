@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // 3. Make sure the server is configured correctly
+        
         if (!process.env.TOKEN_SECRET) {
             console.error("TOKEN_SECRET is not set in your .env file");
             return NextResponse.json(
