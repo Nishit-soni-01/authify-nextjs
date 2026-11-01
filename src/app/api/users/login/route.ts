@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
             expiresIn: "1d",
         });
 
-        // 5. Send the token in a secure cookie
+       
         const response = NextResponse.json({
             message: "Login successful",
             success: true,
