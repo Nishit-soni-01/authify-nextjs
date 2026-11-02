@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
             success: true,
         });
         response.cookies.set("token", token, {
-            httpOnly: true, // JavaScript in the browser can't read it
+            httpOnly: true, 
             secure: process.env.NODE_ENV === "production", // HTTPS only in production
             sameSite: "lax", // helps protect against CSRF
             maxAge: 60 * 60 * 24, // 1 day, matches the token expiry
