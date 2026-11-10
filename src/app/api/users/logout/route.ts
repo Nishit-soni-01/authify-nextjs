@@ -7,7 +7,7 @@ export async function GET() {
             success: true,
         });
 
-        // To delete a cookie, the browser needs the same attributes it was set with
+     
         // (path, sameSite, secure). These must match the options in the login route.
         response.cookies.set("token", "", {
             httpOnly: true,
