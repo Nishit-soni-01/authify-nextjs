@@ -1,4 +1,4 @@
-# Authify
+#  Authify
 
 A full-stack user authentication system built with **Next.js**, **MongoDB**, and **Tailwind CSS**. It covers the complete account lifecycle: sign up, email verification, login, logout, a protected profile page, and a secure forgot/reset password flow.
 
